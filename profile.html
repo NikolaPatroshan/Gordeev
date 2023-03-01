@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>НН-ТУР</title>
+</head>
+<body>
+
+<!--шапка сайта-->
+
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img class="img-fluid logo" src="media/edited_images/logo.png" alt="НН-ТУР">
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 link-success">Путеводитель</a></li>
+            <li><a href="search.html" class="nav-link px-2 link-success">Поиск</a></li>
+            <li><a href="profile.html" class="nav-link px-2 link-secondary">Личный кабинет</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+            <form action="login.html">
+                <button type="submit" class="btn btn-outline-success me-2">Выйти из личного кабинета</button>
+            </form>
+        </div>
+    </header>
+</div>
+
+<!--Личный кабинет/профиль-->
+
+<div class="container">
+    <div class="my-4">
+        <h1>Личный кабинет</h1>
+    </div>
+    <div class="d-flex">
+        <img src="./media/image/4.jpg" class="img-fluid" alt="...">
+        <div class="card-body">
+            <h2 class="card-title">Борис</h2>
+            <h2 class="card-title">Александров</h2>
+            <h3>Количество посещенных туров<span class="text-success"> 10</span></h3>
+            <h5 class="card-title">Список локаций</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Собор Александра Невского - уникальный храм на плоту</li>
+                <li class="list-group-item">Набережная Гребневского канала - прогулка вдоль современного комплекса зданий Нижегородской ярмарки</li>
+                <li class="list-group-item">Староярмарочный собор (О. Монферран)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Предстоящие туры-->
+
+<div class="container">
+    <h1 class="my-4">Запланированные поездки</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Дата начала тура</th>
+            <th scope="col">Город отправления</th>
+            <th scope="col">Количество туристов</th>
+            <th scope="col">Стоимость тура</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Святое Дивеево</th>
+            <td>11.12.2021</td>
+            <td>Дивеево</td>
+            <td><span class="list-group-hover" data-description="Алексеев Даниил, Берингов Алексей, Косперский Валентин, Коженев Влад">5</span></td>
+            <td>11 480 руб.</td>
+            <td>
+                <button type="button" class="btn btn-danger">Отменить</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Пряничный Городец</th>
+            <td>11.12.2021</td>
+            <td>Городец</td>
+            <td><span class="list-group-hover" data-description="Алексеев Даниил, Берингов Алексей">3</span></td>
+            <td>10 220 руб.</td>
+            <td>
+                <button type="button" class="btn btn-danger">Отменить</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Расписной Семенов</th>
+            <td>11.12.2021</td>
+            <td>Поселение Семеново</td>
+            <td><span class="list-group-hover" data-description="Алексеев Даниил, Берингов Алексей, Косперский Валентин, Коженев Влад, Макаров Андрей">6</span></td>
+            <td>8 710 руб.</td>
+            <td>
+                <button type="button" class="btn btn-danger">Отменить</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Подвал сайта-->
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">Телефон "8 (800) 100-10-10"</p>
+
+        <ul class="nav col-md-8 justify-content-end">
+            <li class="nav-item"><a href="register.html" class="nav-link px-2 text-muted">Регистрация</a></li>
+            <li class="nav-item"><a href="profile.html" class="nav-link px-2 text-muted">Личный кабинет</a></li>
+            <li class="nav-item"><a href="search.html" class="nav-link px-2 text-muted">Поиск тура</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Путеводитель</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link px-2 text-muted">Авторизация</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!--Подключение js-->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

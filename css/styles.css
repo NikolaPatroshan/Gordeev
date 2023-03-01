@@ -1,0 +1,84 @@
+/*Подключение шрифта*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../media/fonts/Raleway-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: 'Raleway';
+}
+
+/*Изменение размера логотипа*/
+
+.logo {
+    max-height: 60px;
+}
+
+/*Размеры изображений в карусели*/
+.carousel-feedback {
+    max-height: 500px;
+}
+
+
+/*изменение стиля кнопок пагинатора*/
+
+.active > .success-pug {
+    background-color: var(--bs-success) !important;
+    border-color: var(--bs-success) !important;
+}
+
+/*Внешняя подсветка кнопок пагинатора*/
+
+.success-pug:focus, .success-pug:hover {
+    z-index: 3;
+    color: var(--bs-success);
+    background-color: #e9ecef;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 25%);
+}
+
+/*Стили формы при регистрации*/
+
+.form-sign-in {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.success-input:focus, .success-input:hover {
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 25%);
+}
+
+/*Стиль для списка при наведении на число*/
+
+.list-group-hover {
+    position: relative;
+    color: var(--bs-success);
+    cursor: help;
+}
+
+.list-group-hover[data-description]:hover::after,
+.list-group-hover[data-description]:focus::after {
+    content: attr(data-description);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+/*Размеры изображений в таблицах*/
+
+th > img {
+    max-height: 100px;
+    max-width: 200px;
+}
